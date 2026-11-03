@@ -1,0 +1,5 @@
+Cherry: 150
+Roma: 1
+Beefsteak: 200
+Heirloom: 50
+Grape: 300

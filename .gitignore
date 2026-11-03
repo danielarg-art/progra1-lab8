@@ -1,0 +1,82 @@
+## =====================================
+## .gitignore para aplicación C++ en Visual Studio
+## =====================================
+
+# Archivos binarios y temporales
+*.obj
+*.exe
+*.pdb
+*.o
+*.idb
+*.ilk
+*.json
+*.tlh
+*.tli
+*.pch
+*.exp
+*.lib
+*.dll
+*.log
+*.vspscc
+*.vssscc
+
+# Archivos de precompilador y cache
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# Carpetas generadas automáticamente
+[Bb]in/
+[Dd]ebug*/
+[Rr]elease*/
+[xX]64/
+[xX]86/
+[Oo]bj/
+[Oo]ut/
+[ipch]/
+*.ipch
+
+# Archivos de usuario y configuración local
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+
+# Configuración de Visual Studio y dependencias
+.vs/
+.vscode/
+*.VC.db
+*.VC.opendb
+
+# Archivos CMake (si el proyecto usa CMake)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+out/
+
+# Archivos generados por pruebas
+*.tlog
+TestResults/
+*.coverage
+*.coveragexml
+
+# Otros
+*.tmp
+*.log
+*.bak
+
+# Archivos del sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+d6242f4b-3213-4dd5-9037-4f7eec313718*/
