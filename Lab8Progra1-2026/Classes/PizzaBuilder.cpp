@@ -1,4 +1,4 @@
-﻿#include "PizzaBuilder.h"
+#include "PizzaBuilder.h"
 #include <cstdlib>
 #include <iostream>
 #include <string>
@@ -54,8 +54,7 @@ void PizzaBuilder::IrAlSiguienteIngrediente() {
         // así el switch sigue hasta el default mientras no haya más ingredientes.
         // SelectCheese();
     case 3:
-        // TODO carnes: descomenta SelectMeat(). No pongas break todavía.
-        // SelectMeat();
+        SelectMeat();
     case 4:
         // TODO hierbas: descomenta SelectHerb(). No pongas break todavía.
         // SelectHerb();
@@ -181,3 +180,16 @@ void PizzaBuilder::SelectTomatoes() {
 //void PizzaBuilder::SelectMeat() {
 //    // Resolver.
 //}
+
+void PizzaBuilder::SelectMeat() {
+    IngredientSelector<MeatsRepository> selector(meatsRepo_, availableMeats_, "carne");
+    while (true) {
+        std::cout << "\n--- Selección de carnes ---" << std::endl;
+        selector.DisplayAvailableIngredients();
+        std::cout << "\nIngresa una carne (o 'listo' para terminar): ";
+        std::string opcion;
+        std::getline(std::cin, opcion);
+        if (opcion == "listo" || opcion == "LISTO") break;
+        selector.AddIngredientToPizza(opcion, selectedMeats_);
+    }
+}
